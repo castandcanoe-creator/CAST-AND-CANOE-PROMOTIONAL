@@ -1,0 +1,165 @@
+/* Cast & Canoe — Press Kit prototype
+   Warm field-paper look: soft tan background, dark green/teal accents,
+   salmon-red accent (Brooke's cap). Self-contained: no external fonts
+   or requests. */
+
+:root {
+  --paper: #f3e9d2;
+  --paper-deep: #e9dcbc;
+  --ink: #2e2a20;
+  --teal: #14635d;
+  --teal-dark: #0d4541;
+  --green-dark: #274435;
+  --salmon: #d9534a;
+  --salmon-dark: #b23a33;
+  --frame: #c9b183;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia,
+    "Times New Roman", serif;
+  line-height: 1.6;
+}
+
+a { color: var(--teal); }
+a:hover { color: var(--teal-dark); }
+
+.site-header {
+  text-align: center;
+  padding: 3rem 1.25rem 2.25rem;
+  background: var(--paper-deep);
+  border-bottom: 4px solid var(--teal);
+}
+
+.eyebrow {
+  margin: 0 0 0.5rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: var(--salmon-dark);
+  font-weight: bold;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 2.6rem;
+  color: var(--green-dark);
+}
+
+.one-liner {
+  margin: 0.75rem auto 0;
+  max-width: 34rem;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.header-cta { margin-top: 1.5rem; }
+
+.button {
+  display: inline-block;
+  background: var(--salmon);
+  color: #fff;
+  text-decoration: none;
+  padding: 0.65rem 1.4rem;
+  border-radius: 6px;
+  border-bottom: 3px solid var(--salmon-dark);
+  font-weight: bold;
+}
+.button:hover { background: var(--salmon-dark); color: #fff; }
+
+main {
+  max-width: 56rem;
+  margin: 0 auto;
+  padding: 0 1.25rem 2rem;
+}
+
+section {
+  background: #faf4e3;
+  border: 1px solid var(--frame);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem 1.5rem;
+  margin-top: 1.5rem;
+}
+
+h2 {
+  margin-top: 0;
+  color: var(--teal-dark);
+  border-bottom: 2px solid var(--paper-deep);
+  padding-bottom: 0.35rem;
+}
+
+.section-note { font-style: italic; color: #6b6046; }
+
+table.fact-sheet {
+  width: 100%;
+  border-collapse: collapse;
+}
+table.fact-sheet th,
+table.fact-sheet td {
+  text-align: left;
+  padding: 0.45rem 0.6rem;
+  border-bottom: 1px solid var(--paper-deep);
+  vertical-align: top;
+}
+table.fact-sheet th {
+  width: 11rem;
+  color: var(--green-dark);
+  white-space: nowrap;
+}
+
+ul.features li,
+ul.lakes li { margin-bottom: 0.5rem; }
+
+.shot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 1rem;
+}
+
+.shot-slot {
+  border: 2px dashed var(--salmon);
+  border-radius: 8px;
+  background: var(--paper);
+  color: #7a4a3a;
+  min-height: 9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  font-style: italic;
+}
+
+figure.key-art { margin: 0; text-align: center; }
+figure.key-art img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--frame);
+  border-radius: 8px;
+  image-rendering: pixelated;
+}
+figure.key-art figcaption {
+  margin-top: 0.6rem;
+  font-style: italic;
+  color: #6b6046;
+}
+
+ul.links { list-style: none; padding-left: 0; }
+ul.links li { margin-bottom: 0.4rem; }
+
+.site-footer {
+  text-align: center;
+  padding: 1.5rem 1.25rem 2.5rem;
+  color: #6b6046;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 40rem) {
+  .site-header h1 { font-size: 2rem; }
+  table.fact-sheet th { white-space: normal; width: 8rem; }
+}
